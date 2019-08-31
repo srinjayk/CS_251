@@ -1,0 +1,4 @@
+Function1,time_spent_by_function1,Function2,time_spent_in_function2
+
+TestFunc,0.00,StaticFunc,20.94
+main,0.00,TestFunc,0.00

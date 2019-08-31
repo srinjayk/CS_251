@@ -1,0 +1,21 @@
+Step 1: Download the zip file from the moodle.
+Step 2: Unzip the file.
+Command:
+Step 3: Run the executable file
+Command: ./create_asgn
+Step 4: Go to asgn directory
+Command: cd asgn
+Step 5: see the contents in the asgn directory
+Command: ls
+Problem: ls: cannot open directory '.': Permission denied
+Solution: cd..     chmod 777 asgn   
+Step 6: We see the contents inside the asgn directory
+Command: ls -al
+Observation: Here we see that the file run_me is pointer to the bin directory
+Step 7: We go to the bin directory
+Command: cd bin
+Step 8: Run the file.
+Command: ./.run_me
+Problem: ls: cannot open directory '.': Permission denied
+Solution: cd..     chmod 777 .run_me        ./run_me
+Step 9: The solution fiel is formed.

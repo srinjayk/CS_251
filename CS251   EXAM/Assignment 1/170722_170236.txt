@@ -1,0 +1,35 @@
+Name: Deepesh Kumar Lall
+Roll: 170236
+Name: Srinjay Kumar
+Roll: 170722
+
+Assignment 1 CS251
+
+1.  Download the "pacakge.tar.gz" file.
+2.  Unzip the file.
+	 Code: tar xvzf package.tar.gz
+3.  Change the Directory inside the package directory
+	 Code: cd package
+4.  List down all the files and folders inside package along with inode number.
+	 Code: ls -lai
+5.  Check the file type of create_asgn.
+	 Code: file create_asgn
+6.  As output is an executable file so execute create_asgn
+	 Code: ./create_asgn
+7.  As a file asgn is created change the directory in it.
+	 Code: ls -lai
+		   cd asgn
+8.  Check all the file inside asgn/
+	 Code: ls -lai
+9.  As we have run_me as a link to bin/.run_me so changing directory into bin and running ./.run_me
+	 Code: cd bin
+		   ls -lai
+10. We can see different inode number of bin/.run_me and run_me so run_me is a soft_link and bin/.run_me dosent have execute permission so changing the rights
+	 Code: chmod u+x .run_me
+11. Now running .run_me would give an error to make a directory named output.
+	 Code: ./.run_me
+12. Making a directory named output and running .run_me again
+	 Code: mkdir output
+		   ./.run_me
+13. Checking inside Output we find the code.html file
+	 Code: ls -lai output/code.html

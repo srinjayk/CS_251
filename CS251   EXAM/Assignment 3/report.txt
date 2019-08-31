@@ -1,0 +1,28 @@
+Deepesh Kumar Lall 170236
+Srinjay Kumar 170722
+
+Task 1
+
+We have to run the script which would as for a sample file containing details of folder that is needed to placed with there
+location and permissions.
+
+We have all the details consisting of the filename, the permissions, and the destination_directory in a file named sample.
+We then write them separately in three different files separating them with the cut command.
+The three files that are created are:
+  directory (containing all the files and directory)
+  permission (the permissions that are to be given)
+  destination_directory (the file containing all the destination directories)
+
+We then determine the file-type of the file with the help of file command and then searching for a particular word
+Corresponding to each type, we then use switch-case statements to determine the destinaton directory.
+Finally, we use the chmod command to give the required permission.
+
+Task 2
+
+We first download the rss feeds from the espn cricinfo website.
+We get an xml file.
+We then separate the lines that contain <title> tag since they conatin the scores.
+We then replace the title tag.
+Now, we have the match list.
+We then print out whole match list to the terminal and ask the user to select for his required match.
+Then, we run an infinite loop and show desktop notifications every 10 seconds for the match of the team the user has requested

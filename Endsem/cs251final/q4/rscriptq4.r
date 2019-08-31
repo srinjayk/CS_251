@@ -1,0 +1,6 @@
+library(ggplot2)
+t=read.csv("result2.csv")
+gg<-ggplot(t)+geom_line(aes(x=input,y=sort1,color=1))+geom_line(aes(x=input,y=sort2,color=2))
+gg<-gg+labs(title="Question 4",x="Input Value",y="Sort1 and Sort2")
+gg<-gg+scale_color_continuous(name="sort1=1 and sort2=2")
+ggsave("ques4graph.png",plot=gg)

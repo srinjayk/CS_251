@@ -1,0 +1,38 @@
+CS 251 Assignment 2
+
+Deepesh Kumar Lall (170236)
+Srinjay Kumar (170722)
+
+Task 1:
+
+Step 1: Download the package and extract it on the desktop.
+Command: tar xvzf package.tar.gz
+
+Step 2:Go to the package.
+Command: cd package
+
+Step 3: We need to see the standard error after running runme1 , so we need to transfer the standard error to the standar out and clear standard out buffer to temp directory.
+Command: ./runme1 2>&1 >temp
+
+Step 4:Now we have the file descriptor and the signal on the terminal. We would now run the second executable file. We would then need to push the file descriptor 4 to stdout so that we could have that.
+Command: ./runme2 4>&1
+
+Step 5:We now run the program in the background and then check if the program is running.
+Command: Ctrl+Z (for sending the program in background) bg(for resuming if the program in background)
+
+Step 6: We now need to see the jobs running and the processes that are being executed.
+Command: jobs(for checking the run status of the background process)
+         ps (for the processes, we would later need the process id for sending the signal to runme2)
+
+Step 7: The signal is 'sigusr1'.  The kill code for 'sigusr1' is '10'. We can see that code by execution of kill
+Command: kill -l (for checking the number for signal sigusr1 in the list of all signal)
+         kill -10 3608 (3608 is the pid)
+
+Step 8: We now get the secret code.
+Command: CS251 is really awesome!
+
+Step 9: To kill the job, we might need to run 'sigkill'.
+Command: kill -9 3608 (3608 is the pid
+
+Task 2:
+Have been commented in the script.

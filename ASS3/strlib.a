@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+int compare(const void * a, const void * b){  return ( (long long int)a - (long long int)b ); }
+
+void make_A_from_B(long long int *A,long long int *B,long long int *temp,long long int i,long long int N,long long int n,long long int idx,long long int left){
+  if(idx==n||i==n){ return; }
+  long long int r=1<<i+1,tmp=left,copy_temp[r];
+  for(long long int j=0;j<r;j++){ copy_temp[j]=temp[j]; }
+  qsort(copy_temp,r,sizeof(long long int),compare);
+  for(long long int j=0;j<r;j++){ temp[j]=copy_temp[j]; }
+  for(long long int k=left;k<r;k++){
+    if(B[k]!=temp[k]){
+      A[idx]=B[k];
+      left=k;
+      break;
+    }
+  }
+  if(left==tmp){
+    left=r;
+    A[idx]=B[r];
+  }
+  for(long long int j=0;j<r;j++){ temp[r+j]=B[left]+temp[j]; }
+  return make_A_from_B(A,B,temp,i+1,N,n,idx+1,left);
+}
+
+int main(){
+  long long int t; scanf("%lld",&t);
+  while(t--){
+    long long int n; scanf("%lld",&n);
+    long long int x=1<<n,B[x],A[n],temp[x];
+    for(long long int i=0;i<x;i++){
+      scanf("%lld",&B[i]);
+      temp[i]=-1;
+    }
+    temp[0]=0;
+    temp[1]=B[1];
+    A[0]=B[1];
+    make_A_from_B(A,B,temp,0,x,n,1,0);
+    for(long long int i=0;i<n;i++){ printf("%lld ",A[i]); }
+    printf("\n");
+  }
+  return 0;
+}

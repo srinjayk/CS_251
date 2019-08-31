@@ -1,0 +1,14 @@
+/bin/bash,7179,-rwxr-xr-x,1
+/usr/bin/dbus-daemon,846,-rwxr-xr-x,1
+/usr/bin/whoopsie,1183,-rwxr-xr-x,1
+/usr/bin/gnome-keyring-daemon,1424,-rwxr-xr-x,1
+/usr/bin/ibus-daemon,1597,-rwxr-xr-x,1
+/usr/bin/dbus-daemon,1835,-rwxr-xr-x,1
+/usr/bin/pulseaudio,1962,-rwxr-xr-x,1
+/usr/bin/python,2002,lrwxrwxrwx,1
+/usr/bin/python,2002,lrwxrwxrwx,1
+/usr/bin/python,2021,lrwxrwxrwx,1
+/usr/bin/python,2021,lrwxrwxrwx,1
+/usr/bin/gnome-software,2022,-rwxr-xr-x,1
+/bin/sh,2326,lrwxrwxrwx,1
+/usr/bin/zeitgeist-daemon,2330,-rwxr-xr-x,1

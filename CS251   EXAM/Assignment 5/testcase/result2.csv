@@ -1,0 +1,14 @@
+Function1,time_spent_by_function1,Function2,time_spent_in_function2
+
+alt_sep_test,0.00,Non_Crossing_Biased_Climb,0.00
+alt_sep_test,0.00,Non_Crossing_Biased_Descend,0.00
+alt_sep_test,0.00,Own_Above_Threat,0.00
+alt_sep_test,0.00,Own_Below_Threat,0.00
+Non_Crossing_Biased_Climb,0.00,Inhibit_Biased_Climb,0.00
+Non_Crossing_Biased_Climb,0.00,Own_Below_Threat,0.00
+Non_Crossing_Biased_Climb,0.00,ALIM,0.00
+Non_Crossing_Biased_Climb,0.00,Own_Above_Threat,0.00
+Non_Crossing_Biased_Descend,0.00,Inhibit_Biased_Climb,0.00
+Non_Crossing_Biased_Descend,0.00,Own_Above_Threat,0.00
+Non_Crossing_Biased_Descend,0.00,ALIM,0.00
+Non_Crossing_Biased_Descend,0.00,Own_Below_Threat,0.00

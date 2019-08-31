@@ -1,0 +1,4 @@
+my_header.h Read,Execute /home/srinjayk/Desktop/Assignment3_test_case_folder
+my_lib.a Read /home/srinjayk/Desktop/Assignment3_test_case_folder
+my_pdf.pdf Read,Write /home/srinjayk/Desktop
+runme None /home/srinjayk/Desktop
